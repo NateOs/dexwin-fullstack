@@ -14,3 +14,8 @@
 - run npm install
 - run npm start/dev
 - server shd be up and running
+
+## Don't forget to create these env var:
+- MONGO_URI
+- JWT_SECRET
+- JWT_LIFETIME
