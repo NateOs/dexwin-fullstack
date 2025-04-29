@@ -52,3 +52,8 @@ export default tseslint.config({
   },
 })
 ```
+# to run:
+
+## add api in env: eg. API_URL='localhost:3000/api/v1'
+
+run pnpm install and pnpm dev to start frontend

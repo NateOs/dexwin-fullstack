@@ -19,3 +19,9 @@
 - MONGO_URI
 - JWT_SECRET
 - JWT_LIFETIME
+
+# to run :
+add a mongo url
+ and these : MONGO_URI=
+JWT_SECRET='dexter+test'
+JWT_LIFETIME=3600
