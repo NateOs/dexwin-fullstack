@@ -20,7 +20,7 @@ const connectDB = require("./db/connect");
 //  routers
 const authRouter = require("./routes/authRoutes");
 const userRouter = require("./routes/userRoutes");
-const callRouter = require("./routes/callRoutes");
+const todoRouter = require('./routes/todoRoutes');
 
 
 // middleware
@@ -46,7 +46,11 @@ app.use(express.static("./public"));
 app.use(fileUpload());
 
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/users", callRouter);
+app.use('/api/v1/todos', todoRouter);
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the Todo API');
+});
 
 
 app.use(notFoundMiddleware);
